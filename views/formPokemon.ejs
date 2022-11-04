@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h2>Menu : </h2>
+    <ul>
+        <li><a href="/pokemon">Accueil</a></li>
+        <li><a href="/pokemon/my/favoris">Mes favoris</a></li>
+    </ul>
+    <h1>Modification <%= pokemon.name%></h1>
+    <form action="/pokemon/update/<%= pokemon.id %>" method="post">
+        Nom : <input type="text" name="name" value="<%= pokemon.name%>"><br>
+        Hauteur :<input type="number" name="height" value="<%= pokemon.height%>"><br>
+        Poids :<input type="number" name="weight" value="<%= pokemon.weight%>"><br>
+        Commentaire : <input type="textarea" name="commentaire" value="<%= pokemon.commentaire == null ? '' : pokemon.commentaire%>" placeholder="Commentaire"> <br>
+        Possédé : <input type="checkbox" name="possede" <% if(pokemon.possede){ %> checked <% } %>>
+        <button>Valider</button>
+    </form>
+</body>
+</html>

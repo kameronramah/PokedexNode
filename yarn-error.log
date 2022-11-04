@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\krama\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/reactexit
+
+PATH: 
+  C:\Users\krama\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\krama\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\4.4\bin;C:\php;C:\ProgramData\ComposerSetup\bin;D:\Program Files\Symfony;C:\Program Files (x86)\dotnet;C:\Users\krama\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\Vagrant\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\krama\AppData\Local\Microsoft\WindowsApps;C:\Users\krama\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\krama\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\4.4\bin;D:\Program_Files\heroku\bin;C:\Users\krama\AppData\Roaming\Composer\vendor\bin;C:\Users\krama\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\krama\Documents\Digital Campus\Node\ejsApp\node_modules\.bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  18.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2freactexit: Not found
+      at params.callback [as _callback] (C:\Users\krama\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at self.callback (C:\Users\krama\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\krama\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\krama\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "ejsapp",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www",
+      "dev": "nodemon ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "debug": "~2.6.9",
+      "ejs": "~2.6.1",
+      "express": "~4.16.1",
+      "http-errors": "~1.6.3",
+      "morgan": "~1.9.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

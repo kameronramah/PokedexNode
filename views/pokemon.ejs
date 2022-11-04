@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h2>Menu : </h2>
+    <ul>
+        <li><a href="/pokemon">Accueil</a></li>
+        <li><a href="/pokemon/my/favoris">Mes favoris</a></li>
+    </ul>
+    <ul>
+        <li>Apparence : <img src="<%= infos.sprites.back_default%>" /></li>
+        <li>Nom :<%= title%></li>
+        <li>ID :<%= infos.id%></li>
+        <li>Hauteur: <%= infos.height%></li>
+        <li>Poids: <%= infos.weight%></li>
+        <form action="/pokemon/<%= title%>" method="POST">
+            <button>Ajouter au favoris </button>
+        </form>
+    </ul>
+</body>
+</html>
